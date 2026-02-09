@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - '5432:5432'
+      - '9112:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -21,7 +21,7 @@ services:
     env_file:
       - ./backend/.env
     ports:
-      - '5001:5000'
+      - '9111:5000'
     depends_on:
       - db
 
@@ -30,7 +30,7 @@ services:
     container_name: next-frontend
     restart: always
     ports:
-      - '3000:3000'
+      - '9110:3000'
     depends_on:
       - backend
 
