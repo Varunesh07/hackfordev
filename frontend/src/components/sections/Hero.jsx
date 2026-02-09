@@ -206,7 +206,7 @@ export function Hero() {
             className="flex flex-col sm:flex-col gap-4 justify-center"
           >
             <div
-              onClick={handleRegisterClick}
+              // onClick={handleRegisterClick}
               size="lg"
               className="group text-5xl mb-10 "
             >
