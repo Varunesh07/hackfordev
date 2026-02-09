@@ -203,7 +203,7 @@ export function Navbar() {
                   <button
                     onClick={handleSignInClick}
                     className={cn(
-                      'px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:scale-105 bg-primary  ',
+                      'px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:scale-105 bg-primary opacity-0 pointer-events-none hidden ',
                       isScrolled
                         ? 'text-white  hover:text-white '
                         : 'text-white/90 hover:text-white ',
@@ -215,7 +215,7 @@ export function Navbar() {
                   {/* Register Button */}
                   <Button
                     onClick={handleRegisterClick}
-                    className='transition-all duration-200 hover:scale-105'
+                    className='transition-all duration-200 hover:scale-105 opacity-0 pointer-events-none hidden'
                   >
                     Register Now
                   </Button>
@@ -278,7 +278,7 @@ export function Navbar() {
                   {/* Register Button */}
                   <Button
                     onClick={handleRegisterClick}
-                    className='w-full  transition-all duration-200 '
+                    className='w-full  transition-all duration-200  opacity-0 pointer-events-none hidden'
                   >
                     Register Now
                   </Button>
@@ -297,7 +297,7 @@ export function Navbar() {
                   {/* Sign In Button */}
                   <button
                     onClick={handleSignInClick}
-                    className='w-full px-6 py-2 text-white-700 border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-black  transition-all duration-200 font-medium'
+                    className='w-full px-6 py-2 text-white-700 border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-black  transition-all duration-200 font-medium opacity-0 pointer-events-none hidden'
                   >
                     Sign In
                   </button>
@@ -305,7 +305,7 @@ export function Navbar() {
                   {/* Register Button */}
                   <Button
                     onClick={handleRegisterClick}
-                    className='w-full transition-all duration-200'
+                    className='w-full transition-all duration-200 opacity-0 pointer-events-none hidden'
                   >
                     Register Now
                   </Button>

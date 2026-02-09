@@ -203,16 +203,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-col gap-4 justify-center"
           >
-            <Button
+            <div
               onClick={handleRegisterClick}
               size="lg"
-              className="group"
+              className="group text-5xl mb-10 "
             >
-              Register Now
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
+              Registration Opens on <span className="inline-block whitespace-nowrap max-md:text-4xl">February 16, 2026</span>    
+              {/* <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1   " /> */}
+            </div>
             <Button
               onClick={handleViewDomains}
               variant="outline"
