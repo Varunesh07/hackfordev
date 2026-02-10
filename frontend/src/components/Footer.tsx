@@ -62,7 +62,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#timeline"
+                  href="#dates"
                   className="text-muted-foreground hover:text-primary text-sm transition-colors duration-200"
                 >
                   Timeline

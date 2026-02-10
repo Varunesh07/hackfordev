@@ -37,6 +37,6 @@
     "src/components/Navbar.jsx",
     "src/components/sections/Hero.jsx",
     "src/components/sections/Jury.jsx"
-  ],
+, "src/components/sections/timeline.jsx"  ],
   "exclude": ["frontend/node_modules"]
 }

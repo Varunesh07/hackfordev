@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, Video, Github, FileText, Building, Users } from "lucide-react";
+import { CheckCircle2, Video, Github, FileText, Building, Users, MapPin } from "lucide-react";
 import { Card } from "../ui/Card";
 import { cn } from "../../lib/utils";
 
@@ -101,57 +101,43 @@ export function HackathonTimeline() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="h-full p-8 border-2 border-accent/20 bg-accent/5">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
-                  <span className="text-white font-bold">2</span>
-                </div>
-                <h3 className="text-2xl font-bold text-accent">
-                  Round II – Offline Final Round
-                </h3>
-              </div>
+           <Card className="h-full p-8 border-2 border-accent/20 bg-accent/5 relative overflow-hidden">
+  {/* Decorative Background */}
+  <div className="absolute top-0 right-0 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
+  <div className="absolute bottom-0 left-0 w-32 h-32 bg-accent/5 rounded-full blur-2xl" />
+  
+  <div className="relative">
+    <div className="flex items-center gap-3 mb-8">
+      <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+        <span className="text-white font-bold">2</span>
+      </div>
+      <h3 className="text-2xl font-bold text-accent">
+        Round II – Grand Finale
+      </h3>
+    </div>
 
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                    <Building className="w-5 h-5 text-accent" />
-                    Format
-                  </h4>
-                  <ul className="space-y-3 ml-7">
-                    <li className="text-muted-foreground">
-                      On-campus hackathon at the venue
-                    </li>
-                    <li className="text-muted-foreground">
-                      Live demo session with jury panel
-                    </li>
-                    <li className="text-muted-foreground">
-                      Interactive Q&A with judges
-                    </li>
-                    <li className="text-muted-foreground">
-                      Final evaluation and winner announcement
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                    <Users className="w-5 h-5 text-accent" />
-                    What to Prepare
-                  </h4>
-                  <ul className="space-y-2 ml-7">
-                    <li className="text-muted-foreground">
-                      • Finalized working prototype
-                    </li>
-                    <li className="text-muted-foreground">
-                      • Presentation materials
-                    </li>
-                    <li className="text-muted-foreground">
-                      • Team introduction and innovation highlights
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Card>
+    {/* Centered Venue Card */}
+    <div className="flex items-center justify-center min-h-[200px]">
+      <div className="bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl p-8 border-2 border-accent/30 shadow-lg max-w-md w-full max-h-4xl">
+        <div className="text-center space-y-4 min-h-[200px] flex  flex-col items-center justify-center">
+          {/* <div className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-2">
+            <Building className="w-8 h-8 text-accent" />
+          </div> */}
+          {/* <p className="text-sm font-medium text-accent/80 uppercase tracking-wide mb-3">
+            Venue
+          </p> */}
+          <h4 className="text-2xl font-bold text-foreground mb-4">
+            PSG College of Technology
+          </h4>
+          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <MapPin className="w-4 h-4 flex-shrink-0" />
+            <p className="text-sm">Peelamedu, Coimbatore, Tamil Nadu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>
           </motion.div>
         </div>
       </div>

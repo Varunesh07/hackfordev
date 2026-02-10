@@ -15,6 +15,7 @@ import { RegistrationFlow } from "../components/sections/RegistrationFlow";
 import { Prizes } from "../components/sections/Prizes";
 import { Jury } from "../components/sections/Jury";
 import { Contact } from "../components/sections/Contact";
+import { Timeline } from "../components/sections/timeline";
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = React.useState<Set<string>>(new Set());
@@ -52,6 +53,7 @@ export default function Home() {
     { id: 'overview', component: EventOverview, delay: getSectionDelay(1) },
     { id: 'details', component: EventDetails, delay: getSectionDelay(2) },
     { id: 'eligibility', component: Eligibility, delay: getSectionDelay(3) },
+    {id:'dates',component:Timeline,delay:getSectionDelay(5)},
     { id: 'rules', component: Rules, delay: getSectionDelay(4) },
     { id: 'domains', component: ProblemDomains, delay: getSectionDelay(5) },
     { id: 'timeline', component: HackathonTimeline, delay: getSectionDelay(6) },
@@ -60,6 +62,7 @@ export default function Home() {
     { id: 'prizes', component: Prizes, delay: getSectionDelay(9) },
     { id: 'jury', component: Jury, delay: getSectionDelay(10) },
     { id: 'contact', component: Contact, delay: getSectionDelay(11) },
+    
   ];
 
   return (

@@ -10,7 +10,7 @@ const navItems = [
   { name: 'Eligibility', href: '#eligibility' },
   { name: 'Rules', href: '#rules' },
   { name: 'Domains', href: '#domains' },
-  { name: 'Timeline', href: '#timeline' },
+  { name: 'Timeline', href: '#dates' },
   { name: 'Prizes', href: '#prizes' },
   { name: 'Jury', href: '#jury' },
   { name: 'Contact', href: '#contact' },
