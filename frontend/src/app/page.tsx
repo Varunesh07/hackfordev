@@ -53,9 +53,10 @@ export default function Home() {
     { id: 'overview', component: EventOverview, delay: getSectionDelay(1) },
     { id: 'details', component: EventDetails, delay: getSectionDelay(2) },
     { id: 'eligibility', component: Eligibility, delay: getSectionDelay(3) },
-    {id:'dates',component:Timeline,delay:getSectionDelay(5)},
+    
     { id: 'rules', component: Rules, delay: getSectionDelay(4) },
     { id: 'domains', component: ProblemDomains, delay: getSectionDelay(5) },
+    {id:'dates',component:Timeline,delay:getSectionDelay(5)},
     { id: 'timeline', component: HackathonTimeline, delay: getSectionDelay(6) },
     { id: 'submission', component: SubmissionDetails, delay: getSectionDelay(7) },
     { id: 'registration', component: RegistrationFlow, delay: getSectionDelay(8) },

@@ -11,6 +11,7 @@ const navItems = [
   { name: 'Rules', href: '#rules' },
   { name: 'Domains', href: '#domains' },
   { name: 'Timeline', href: '#dates' },
+  {name:"Round Description",href:"#timeline"},
   { name: 'Prizes', href: '#prizes' },
   { name: 'Jury', href: '#jury' },
   { name: 'Contact', href: '#contact' },
