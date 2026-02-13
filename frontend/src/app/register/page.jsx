@@ -669,7 +669,7 @@ export default function RegisterPage() {
                       name='demoVideoURL'
                       value={formData.demoVideoURL}
                       onChange={handleChange}
-                      placeholder='https://youtube.com/watch?v=...'
+                      placeholder='https://drive.google.com/file/d/FILE_ID/view'
                       error={errors.demoVideoURL}
                     />
                   </div>
